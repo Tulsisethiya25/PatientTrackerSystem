@@ -29,10 +29,6 @@ public class AdminController {
 		return adminservice.getAllDoctors();
 	}
 	
-	@GetMapping("/test")
-	public String name() {
-		return "Tulsi";
-	}
 	
 	@DeleteMapping("/deletedoctor/{doctorId}")
 	public ResponseEntity<Doctor> deleteDoctorByDoctorId(@PathVariable int doctorId){
